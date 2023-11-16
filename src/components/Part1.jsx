@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { motion } from "framer-motion"
+import Image from 'next/image'
 
 function Part1(id) {
 
@@ -29,7 +30,7 @@ function Part1(id) {
             onClick={() => setmodifyB(!modifyB)}
             className='flex justify-end'
             >
-                <img  src="https://i.ibb.co/NStwfcV/menu.png" alt="menu" border="0"/> 
+                <Image  src="https://i.ibb.co/NStwfcV/menu.png" alt="menu" border="0"/> 
             </motion.button>
             {modifyB && (
                 <div className='flex p-2 flex-col gap-1 rounded-xl bg-black text-white handleModify ' >
