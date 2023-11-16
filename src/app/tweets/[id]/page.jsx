@@ -4,7 +4,7 @@ import Part1 from '@/components/Part1'
 
 async function TweetsHome({ params }) {
 
-  const response = await fetch(`http://localhost:3000/api/tweets/${params.id}`)
+  const response = await fetch(`/tweets/${params.id}`)
   const data = await response.json()
   let { id, username, email, tweet } = data
 
