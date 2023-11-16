@@ -1,0 +1,77 @@
+.bodyA {
+    background-color: #93878e;
+}
+
+.tweetP {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 25px;
+    padding: 15px;
+}
+
+.btnTweet:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+.tweet {
+    /* flex rounded-lg flex-col p-2 text-black bg-slate-300 */
+    display: flex;
+    color: rgb(0, 0, 0);
+    background-color: rgb(238, 238, 238);
+    border: 1px solid white;
+    border-radius: 15px;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.bgtext {
+    background-color: #c4bac0;
+}
+
+
+.ModifyTweet {
+    border-radius: 10px;
+    padding: 4px;
+    transition: 0.5s;
+}
+.ModifyTweet:hover {
+    border-radius: 10px;
+    background-color: #93878e;
+    padding: 4px;
+    transform: rotate(90deg);
+}
+
+
+.footerA {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    color: rgb(255, 255, 255) ;
+    background-color: #584a55;
+    padding: 30px;
+}
+
+.footerA ol li a {
+    color: rgb(223, 223, 223);
+    font-size: small;
+}
+
+@media (max-width: 500px) {
+    .footerA {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formmedia {
+        width: 100%;
+        border-radius: 0;
+    }
+}
