@@ -1,12 +1,25 @@
+"use client"
 import '@/styles/home.css'
 import Part1 from '@/components/Part1'
+import { useEffect, useState } from 'react'
 
 
-async function TweetsHome({ params }) {
+function TweetsHome({ params }) {
 
-  const response = await fetch(`/api/tweets/${params.id}`)
-  const data = await response.json()
-  let { id, username, email, tweet } = data
+
+  const [tweetsB, settweetsB] = useState('')
+
+  useEffect(() => {
+    fetch(`/api/tweets/${params.id}`)
+    .then((response) => response.json())
+    .then((data)=> {
+      settweetsB(data)
+    })
+  }, [])
+
+  
+
+  let { id, username, email, tweet } = tweetsB
 
   return (
     <section className=' bodyA min-h-screen' >
