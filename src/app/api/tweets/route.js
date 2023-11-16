@@ -7,12 +7,13 @@ export async function GET() {
 }
 
 export async function POST(request) {
-    const {username, email, tweet} = await request.json()
+    const {username, email, tweet, imagen} = await request.json()
     const newTask = await prisma.tweet.create({
         data: {
             username,
             email,
-            tweet
+            tweet,
+            imagen
         }
     })
     return NextResponse.json(newTask)

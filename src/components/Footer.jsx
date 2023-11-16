@@ -3,7 +3,7 @@ import '@/styles/home.css'
 
 function Footer() {
     return (
-        <section className='footerA' >
+        <footer className='footerA' >
             <div className='flex flex-col gap-3 p-2' >
                 <h2>About</h2>
                 <ol>
@@ -37,7 +37,7 @@ function Footer() {
                     </li>
                 </ol>
             </div>
-        </section>
+        </footer>
     )
 }
 

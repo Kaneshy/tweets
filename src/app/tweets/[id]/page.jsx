@@ -19,20 +19,23 @@ function TweetsHome({ params }) {
 
   
 
-  let { id, username, email, tweet } = tweetsB
+  let { id, username, email, tweet, imagen } = tweetsB
 
   return (
     <section className=' bodyA min-h-screen' >
       <div className='tweetP' >
         <div className='tweet' >
           <div className='flex flex-row justify-start gap-4 align-middle items-center relative' >
-            <h2>Username: {username}</h2>
-            <p>{email}</p>
+            <h2>Autor: {username}</h2>
+            <p className='text-slate-500'>{email}</p>
             <Part1 value={id} />
           </div>
           <div className='p-2' >
-            <h2>Post: </h2>
+            <h2 className='text-slate-500'>Post: </h2>
             <p className='p-3 bgtext rounded-xl' >{tweet}</p>
+          </div>
+          <div className='flex align-middle justify-center' >
+            <img className='img-lg' src={imagen} alt="" />
           </div>
         </div>
       </div>

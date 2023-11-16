@@ -21,12 +21,15 @@ const Home = async () => {
             <Link href={`/tweets/${x.id}`} key={x.id}
               className='tweet' >
               <div className='flex flex-row justify-between' >
-                <h2>Username: {x.username}</h2>
-                <p>{x.email}</p>
+                <h2  >Autor: {x.username}</h2>
+                <p className='text-slate-500' >{x.email}</p>
               </div>
               <div className='p-2' >
-                <h2>Post: </h2>
+                <h2 className='text-slate-500' >Post: </h2>
                 <p className='p-3 bgtext rounded-xl' >{x.tweet}</p>
+              </div>
+              <div className='flex align-middle justify-center'>
+                <img loading='lazy' className='img-main-tweet' src={x.imagen} alt="" />
               </div>
             </Link>
           )

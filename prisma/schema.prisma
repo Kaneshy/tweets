@@ -16,4 +16,5 @@ model Tweet {
   username String
   email String 
   tweet String 
+  imagen String
 }

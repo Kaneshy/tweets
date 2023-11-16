@@ -1,5 +1,15 @@
+:root {
+    --main-color: linear-gradient(180deg, #440000 0%, #0f0000 100%);
+    --footer-color: linear-gradient(180deg, #575757 20%, #2b2b2b 80%);
+    --containersong-color: linear-gradient(180deg, #440000 10%, #1f0000 90%);
+}
+
 .bodyA {
     background-color: #93878e;
+}
+
+.Navbar {
+    background-color: #584a55;
 }
 
 .tweetP {
@@ -60,6 +70,14 @@
 .footerA ol li a {
     color: rgb(223, 223, 223);
     font-size: small;
+}
+
+.img-main-tweet {
+    max-height: 500px;
+}
+
+.img-lg {
+    max-height: 80vh;
 }
 
 @media (max-width: 500px) {
