@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation"
 
 const callFetch = async (username, email, tweet, router) => {
     try {
-        const response = await fetch(`http://localhost:3000/api/tweets`, {
+        const response = await fetch(`/api/tweets`, {
             method: 'POST',
             body: JSON.stringify({
                 username,

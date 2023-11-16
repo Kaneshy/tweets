@@ -18,7 +18,7 @@ const Home = async () => {
       <div className='tweetP' >
         {tweets.reverse().map((x) => {
           return (
-            <Link href={`http://localhost:3000/tweets/${x.id}`} key={x.id}
+            <Link href={`/tweets/${x.id}`} key={x.id}
               className='tweet' >
               <div className='flex flex-row justify-between' >
                 <h2>Username: {x.username}</h2>
